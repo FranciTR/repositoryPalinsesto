@@ -15,6 +15,7 @@ public class Login extends HttpServlet {
 	private String utente;
 	private String recuperopassword;
 	private String password;
+	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
@@ -29,7 +30,7 @@ public class Login extends HttpServlet {
 	
 	request.setAttribute("password",password);
 	
-	String nextjsp = "/login.jsp";
+	String nextjsp = "/Login.jsp";
 	
 	RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextjsp);
 	dispatcher.forward(request,response);
