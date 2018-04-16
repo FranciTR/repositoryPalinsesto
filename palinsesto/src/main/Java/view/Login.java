@@ -11,11 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Login extends HttpServlet {
 
-
-	private String utente;
-	private String recuperopassword;
-	private String password;
-	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
